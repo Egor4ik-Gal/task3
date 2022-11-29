@@ -48,7 +48,7 @@ class Example(QWidget, Ui_Form):
             qp.end()
 
     def draw(self, qp):
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(randrange(0, 255), randrange(0, 255), randrange(0, 255)))
         qp.drawEllipse(randrange(0, 455), randrange(0, 400), randrange(0, 455), randrange(0, 400))
 
 
